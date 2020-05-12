@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --https --port 8501",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && rm -rf build && mkdir build && cp dist/js/app.js build",
     "test:unit": "vue-cli-service test:unit --passWithNoTests",
     "lint": "vue-cli-service lint"
   },
